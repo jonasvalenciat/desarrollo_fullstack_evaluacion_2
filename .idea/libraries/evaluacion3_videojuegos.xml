@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="evaluacion3-videojuegos">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/microservicio_1 (2).zip!/" />
+      <root url="jar://$PROJECT_DIR$/Review_Service_M7.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Order_Service_M4.zip!/" />
+      <root url="jar://$PROJECT_DIR$/User_Service_M1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Notification_Service_M8.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Product_Service_M2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Cart_Service_M3.zip!/" />
+      <root url="jar://$PROJECT_DIR$/product_service.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Auth_Service_M10.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Payment_Service_M5.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Category_Service_M9.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Inventory_Service_M6.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
