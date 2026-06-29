@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: category-service
+  profiles:
+    active: h2
+
+server:
+  port: 8089
+
+logging:
+  level:
+    cl.duoc.fullstack.category_service_m9: DEBUG
