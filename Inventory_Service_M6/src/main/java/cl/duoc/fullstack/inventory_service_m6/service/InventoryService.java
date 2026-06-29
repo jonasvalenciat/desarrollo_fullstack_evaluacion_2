@@ -1,5 +1,6 @@
 package cl.duoc.fullstack.inventory_service_m6.service;
 
+import cl.duoc.fullstack.inventory_service_m6.dto.InventoryResponse;
 import cl.duoc.fullstack.inventory_service_m6.dto.ProductDTO;
 import cl.duoc.fullstack.inventory_service_m6.model.Inventory;
 import cl.duoc.fullstack.inventory_service_m6.repository.InventoryRepository;
@@ -16,7 +17,7 @@ public class InventoryService {
     private final InventoryRepository inventoryRepository;
     private final RestTemplate restTemplate;
 
-    public Inventory updateStock(Long productId, Integer quantity) {
+    public InventoryResponse updateStock(Long productId, Integer quantity) {
         try {
             restTemplate.getForObject(
                 "http://localhost:8082/products/" + productId,
@@ -41,6 +42,14 @@ public class InventoryService {
 
         Inventory saved = inventoryRepository.save(inventory);
         log.info("Stock actualizado para productId {}: nuevo stock {}", productId, saved.getStock());
-        return saved;
+        return toResponse(saved);
+    }
+
+    private InventoryResponse toResponse(Inventory inventory) {
+        return new InventoryResponse(
+                inventory.getId(),
+                inventory.getProductId(),
+                inventory.getStock()
+        );
     }
 }
