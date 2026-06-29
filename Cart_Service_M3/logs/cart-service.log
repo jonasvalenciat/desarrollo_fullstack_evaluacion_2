@@ -1,0 +1,66 @@
+2026-06-28T19:56:25.789-04:00  INFO 14116 --- [cart-service] [main] c.d.f.c.CartServiceM3ApplicationTests    : Starting CartServiceM3ApplicationTests using Java 17.0.12 with PID 14116 (started by jonas in C:\Users\jonas\Desktop\evaluacion3-videojuegos\Cart_Service_M3)
+2026-06-28T19:56:25.795-04:00 DEBUG 14116 --- [cart-service] [main] c.d.f.c.CartServiceM3ApplicationTests    : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-06-28T19:56:25.797-04:00  INFO 14116 --- [cart-service] [main] c.d.f.c.CartServiceM3ApplicationTests    : The following 1 profile is active: "h2"
+2026-06-28T19:56:28.991-04:00  INFO 14116 --- [cart-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T19:56:29.205-04:00  INFO 14116 --- [cart-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179 ms. Found 3 JPA repository interfaces.
+2026-06-28T19:56:30.838-04:00  INFO 14116 --- [cart-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T19:56:31.116-04:00  INFO 14116 --- [cart-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-06-28T19:56:31.243-04:00  INFO 14116 --- [cart-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T19:56:32.374-04:00  INFO 14116 --- [cart-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T19:56:32.483-04:00  INFO 14116 --- [cart-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T19:56:32.881-04:00  INFO 14116 --- [cart-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cart_db user=SA
+2026-06-28T19:56:32.886-04:00  INFO 14116 --- [cart-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T19:56:33.035-04:00  INFO 14116 --- [cart-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-28T19:56:35.167-04:00  INFO 14116 --- [cart-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T19:56:35.295-04:00  INFO 14116 --- [cart-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:56:37.052-04:00  INFO 14116 --- [cart-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-28T19:56:39.409-04:00  INFO 14116 --- [cart-service] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cart_db'
+2026-06-28T19:56:39.577-04:00  INFO 14116 --- [cart-service] [main] c.d.f.c.CartServiceM3ApplicationTests    : Started CartServiceM3ApplicationTests in 14.874 seconds (process running for 17.363)
+2026-06-28T19:56:43.213-04:00  INFO 14116 --- [cart-service] [main] c.d.f.c.service.CartService              : Procesando solicitud para agregar producto: 'Laptop' al carrito
+2026-06-28T19:56:43.301-04:00  INFO 14116 --- [cart-service] [main] c.d.f.c.service.CartService              : Procesando solicitud para agregar producto: 'Laptop' al carrito
+2026-06-28T19:56:43.318-04:00  INFO 14116 --- [cart-service] [main] c.d.f.c.service.CartService              : Producto agregado exitosamente al carrito: ID=1, Producto='Laptop'
+2026-06-28T19:56:43.387-04:00  INFO 14116 --- [cart-service] [main] c.d.f.c.service.CartService              : Procesando solicitud para agregar producto: 'Laptop' al carrito
+2026-06-28T19:56:43.404-04:00  INFO 14116 --- [cart-service] [main] c.d.f.c.service.CartService              : Procesando solicitud para agregar producto: 'Laptop' al carrito
+2026-06-28T19:56:43.492-04:00  INFO 14116 --- [cart-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:56:43.511-04:00  INFO 14116 --- [cart-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-28T19:56:43.523-04:00  INFO 14116 --- [cart-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-28T19:57:35.607-04:00  INFO 11740 --- [cart-service] [main] c.d.f.c.CartServiceM3ApplicationTests    : Starting CartServiceM3ApplicationTests using Java 17.0.12 with PID 11740 (started by jonas in C:\Users\jonas\Desktop\evaluacion3-videojuegos\Cart_Service_M3)
+2026-06-28T19:57:35.613-04:00 DEBUG 11740 --- [cart-service] [main] c.d.f.c.CartServiceM3ApplicationTests    : Running with Spring Boot v3.4.4, Spring v6.2.5
+2026-06-28T19:57:35.615-04:00  INFO 11740 --- [cart-service] [main] c.d.f.c.CartServiceM3ApplicationTests    : The following 1 profile is active: "h2"
+2026-06-28T19:57:38.518-04:00  INFO 11740 --- [cart-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T19:57:38.689-04:00  INFO 11740 --- [cart-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 3 JPA repository interfaces.
+2026-06-28T19:57:40.079-04:00  INFO 11740 --- [cart-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T19:57:40.282-04:00  INFO 11740 --- [cart-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-06-28T19:57:40.420-04:00  INFO 11740 --- [cart-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T19:57:41.410-04:00  INFO 11740 --- [cart-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T19:57:41.509-04:00  INFO 11740 --- [cart-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T19:57:42.026-04:00  INFO 11740 --- [cart-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cart_db user=SA
+2026-06-28T19:57:42.031-04:00  INFO 11740 --- [cart-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T19:57:42.211-04:00  INFO 11740 --- [cart-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-28T19:57:43.932-04:00  INFO 11740 --- [cart-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T19:57:44.009-04:00  INFO 11740 --- [cart-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:57:45.522-04:00  INFO 11740 --- [cart-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-06-28T19:57:47.520-04:00  INFO 11740 --- [cart-service] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cart_db'
+2026-06-28T19:57:47.685-04:00  INFO 11740 --- [cart-service] [main] c.d.f.c.CartServiceM3ApplicationTests    : Started CartServiceM3ApplicationTests in 13.469 seconds (process running for 16.124)
+2026-06-28T19:57:51.436-04:00  INFO 11740 --- [cart-service] [main] c.d.f.c.service.CartService              : Procesando solicitud para agregar producto: 'Laptop' al carrito
+2026-06-28T19:57:51.497-04:00  INFO 11740 --- [cart-service] [main] c.d.f.c.service.CartService              : Procesando solicitud para agregar producto: 'Laptop' al carrito
+2026-06-28T19:57:51.512-04:00  INFO 11740 --- [cart-service] [main] c.d.f.c.service.CartService              : Producto agregado exitosamente al carrito: ID=1, Producto='Laptop'
+2026-06-28T19:57:51.567-04:00  INFO 11740 --- [cart-service] [main] c.d.f.c.service.CartService              : Procesando solicitud para agregar producto: 'Laptop' al carrito
+2026-06-28T19:57:51.582-04:00  INFO 11740 --- [cart-service] [main] c.d.f.c.service.CartService              : Procesando solicitud para agregar producto: 'Laptop' al carrito
+2026-06-28T19:57:51.664-04:00  INFO 11740 --- [cart-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:57:51.690-04:00  INFO 11740 --- [cart-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-28T19:57:51.701-04:00  INFO 11740 --- [cart-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

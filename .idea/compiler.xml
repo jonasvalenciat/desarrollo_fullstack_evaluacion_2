@@ -13,11 +13,9 @@
         <module name="Review_Service_M7" />
         <module name="Inventory_Service_M6" />
         <module name="User_Service_M1" />
-        <module name="Order_Service_M4" />
         <module name="Payment_Service_M5" />
         <module name="Notification_Service_M8" />
         <module name="Category_Service_M9" />
-        <module name="Cart_Service_M3" />
         <module name="Auth_Service_M10" />
       </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -25,6 +23,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Product_Service_M2" />
+        <module name="Order_Service_M4" />
+        <module name="Cart_Service_M3" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: order-service
+  profiles:
+    active: h2
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+server:
+  port: 8083
+
+logging:
+  level:
+    root: INFO
+    cl.duoc.fullstack.order_service_m4: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%-5level] %logger{0} - %msg%n"
+  file:
+    name: logs/order-service.log
