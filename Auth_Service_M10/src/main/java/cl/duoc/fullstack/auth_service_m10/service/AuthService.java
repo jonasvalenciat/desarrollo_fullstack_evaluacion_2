@@ -1,5 +1,7 @@
 package cl.duoc.fullstack.auth_service_m10.service;
 
+import cl.duoc.fullstack.auth_service_m10.dto.AuthRegisterRequest;
+import cl.duoc.fullstack.auth_service_m10.dto.AuthRegisterResponse;
 import cl.duoc.fullstack.auth_service_m10.model.AuthUser;
 import cl.duoc.fullstack.auth_service_m10.repository.AuthUserRepository;
 import lombok.RequiredArgsConstructor;
@@ -13,11 +15,14 @@ public class AuthService {
 
     private final AuthUserRepository authUserRepository;
 
-    public AuthUser register(AuthUser user) {
-        log.info("Registrando nuevo usuario para autenticación: " + user.getUsername());
+    public AuthRegisterResponse register(AuthRegisterRequest request) {
+        log.info("Registrando nuevo usuario: {}", request.getUsername());
+        AuthUser user = new AuthUser();
+        user.setUsername(request.getUsername());
+        user.setPassword(request.getPassword());
         AuthUser saved = authUserRepository.save(user);
-        log.info("Usuario registrado exitosamente: " + saved.getUsername());
-        return saved;
+        log.info("Usuario registrado exitosamente: {}", saved.getUsername());
+        return new AuthRegisterResponse(saved.getId(), saved.getUsername(), saved.getRole());
     }
 
     public String login(String username, String password) {
@@ -28,7 +33,7 @@ public class AuthService {
             throw new IllegalArgumentException("Credenciales inválidas");
         }
 
-        log.info("Inicio de sesión exitoso para: " + username);
+        log.info("Inicio de sesión exitoso para: {}", username);
         return "MOCK_JWT_TOKEN_FOR_" + username;
     }
 }

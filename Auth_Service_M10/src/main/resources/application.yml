@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: auth-service
+  profiles:
+    active: h2
+
+server:
+  port: 8090
+
+logging:
+  level:
+    cl.duoc.fullstack.auth_service_m10: DEBUG
